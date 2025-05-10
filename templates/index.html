@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Flask App</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="app-container {{ 'mobile' if is_mobile else 'desktop' }}">
+        <h1>Hello, {{ 'Mobile' if is_mobile else 'Desktop' }} User! 👋</h1>
+        <p>This is a {{ 'mobile' if is_mobile else 'desktop' }}-optimized Flask app.</p>
+        <p>Built with Python and Flask, accessible on both phone and PC.</p>
+    </div>
+</body>
+</html>
